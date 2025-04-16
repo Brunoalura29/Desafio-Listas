@@ -46,18 +46,9 @@ public class Deposito {
         System.out.println("Compras realizadas:\n");
 
         for (Compra c : compras) {
-            System.out.println(c.nome + " - R$ " + c.valor);
+            System.out.println(c.getNome() + " - R$ " + c.getValor());
         }
 
         System.out.println("\n********************\n");
-    }
-    static class Compra {
-        String nome;
-        double valor;
-
-        Compra(String nome, double valor) {
-            this.nome = nome;
-            this.valor = valor;
-        }
     }
 }
